@@ -48,6 +48,12 @@
                             <outputDirectory>${project.build.directory}/cucumber-report-html</outputDirectory>
                             <cucumberOutput>${project.build.directory}/cucumber.json</cucumberOutput>
                         </configuration>
+                             <groupId>org.apache.maven.plugins</groupId>
+                             <artifactId>maven-compiler-plugin</artifactId>
+                             <version>2.4</version>
+                        <configuration>
+                              <source>1.8</source>
+                              <target>1.8</target>
                     </execution>
                 </executions>
             </plugin>
